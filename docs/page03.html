@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Registration Page</title>
+    <style>
+        body
+        {
+            margin-top: 40px;
+        }
+        .body1 {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            font-size: large;
+            margin-left: 400px;
+            margin-top: 30px;
+        }
+
+        fieldset {
+            box-shadow: 0px 0px 5px rgb(0, 0, 0);
+            border-radius: 20px;
+            width: 500px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+        }
+
+        input {
+            outline: none;
+            width: 280px;
+            padding: 10px 20px;
+            border: 2px solid rgb(0, 0, 255, 0.5);
+            border-radius: 5px;
+            transition: border-color 0.3s, background-color 0.3s;
+        }
+        label,
+        p,
+        h2 {
+            color: rgb(6, 34, 37)
+        }
+
+        button {
+            background-color: #0556F3;
+            border: 2px solid #0556F3;
+            color: white;
+            padding: 10px;
+            display: block;
+            width: 200px;
+            border-radius: 5px;
+            font-size: 16px;
+            align-self: center;
+            margin: 10px auto;
+        }
+        button.nav{
+            border: 1px solid #0556F3;
+            border-radius: 4px;
+            background-color: #0556F3;
+            margin: 5px;
+            padding: 10px;
+            width: calc(28% - 10px);
+            box-sizing: border-box;
+            text-align: center;
+        }
+        div{
+            margin-left: 400px;
+            display: flex;
+        }
+        a {
+            text-decoration: none;
+            color: #FFF2FC;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button class = "nav"><a href="index.html">Home</a></button>
+        <button class = "nav"><a href="page02.html">Login</a></button>
+    </div>
+    <fieldset class = "body1">
+        <form>
+            <h3 style="text-align: center;">Registration Form</h3>
+            <hr/>
+            <label for="uname">Username : </label>
+            <input type="text" id="uname" name="uname" placeholder="Create username" required>
+            <br><br>
+            <label for="mail">Email : </label>
+            <input type="email" id="mail" name="mail" placeholder="Enter your email id" required>
+            <br><br>
+            <label for="mobile">Mobile number : </label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter moblie number" pattern="\d{10}"
+                title="Please enter a 10-digit phone number" required>
+            <br><br>
+            <label for="dob">Date of Birth : </label>
+            <input type="date" id="dob" name="dob" placeholder="Enter your date of birth" required>
+            <br><br>
+            <label for="pwd">Password : </label>
+            <input type="password" id="pwd" name="pwd" pattern=".{8, 20}"
+                title="Password should be between 8 and 20 characters long" placeholder="create a strong password"
+                required>
+            <br><br>
+            <label for="cpwd">Confirm Password : </label>
+            <input type="password" id="cpwd" name="cpwd" placeholder="confirm your password" required>
+            <br><br>
+            <center><button type="submit" title="click to submit registration form">Register</button></center>
+            <br>
+        </form>
+    </fieldset>
+    
+</body>
+
+</html>
